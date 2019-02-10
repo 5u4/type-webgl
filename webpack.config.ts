@@ -1,6 +1,7 @@
-const path = require("path");
+import * as path from "path";
+import { Configuration } from "webpack";
 
-module.exports = {
+const config: Configuration = {
     entry: "./src/index.ts",
     output: {
         filename: "main.js",
@@ -15,7 +16,9 @@ module.exports = {
             {
                 test: /\.tsx?$/,
                 loader: "awesome-typescript-loader",
-            }
-        ]
-    }
-}
+            },
+        ],
+    },
+};
+
+export default config;

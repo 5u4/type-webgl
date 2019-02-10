@@ -6,15 +6,17 @@
             "dom"
         ],
         "module": "commonjs",
-        "outDir": "dist",
+        "outDir": "js",
         "rootDir": "./src",
         "sourceMap": true,
-        "target": "es5"
+        "target": "es5",
+        "esModuleInterop": true,
+        "allowSyntheticDefaultImports": true,
     },
     "include": [
         "src/**/*.ts"
     ],
     "exclude": [
         "node_modules"
-    ]
+    ],
 }

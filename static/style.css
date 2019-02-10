@@ -1,0 +1,9 @@
+html, body {
+    min-height: 100%;
+    background-color: rgb(40, 44, 52);
+}
+
+canvas {
+    display: block;
+    margin: 0 auto;
+}
