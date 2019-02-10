@@ -83,6 +83,12 @@ export class GraphicService {
         this.gl.drawArrays(this.gl.LINE_LOOP, 0, 3);
     }
 
+    drawTriangle(p1: Point, p2: Point, p3: Point, c1: Color, c2 = c1, c3 = c2) {
+        this.drawTrianglePrepare(p1, p2, p3, c1, c2, c3);
+
+        this.gl.drawArrays(this.gl.TRIANGLES, 0, 3);
+    }
+
     //#endregion
 
     //#region Helpers

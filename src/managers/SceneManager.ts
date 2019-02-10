@@ -1,4 +1,4 @@
-import { BACKGROUND_COLOR, BLUE, GREEN, RED } from "../constants/color";
+import { BACKGROUND_COLOR, BLUE, CYAN, GREEN, MAGENTA, RED, YELLOW } from "../constants/color";
 import { GraphicService } from "../services/GraphicService";
 import { fshader } from "../shaders/fshader";
 import { vshader } from "../shaders/vshader";
@@ -62,9 +62,18 @@ export class SceneManager {
 
     private draw() {
         this.graphic.drawTriangleOutline(
-            { x: 300, y: 110 },
-            { x: 80, y: 490 },
-            { x: 520, y: 490 },
+            { x: 300, y: 553.5 },
+            { x: 80, y: 173.5 },
+            { x: 520, y: 173.5 },
+            YELLOW,
+            CYAN,
+            MAGENTA
+        );
+
+        this.graphic.drawTriangleOutline(
+            { x: 300, y: 46.5 },
+            { x: 80, y: 426.5 },
+            { x: 520, y: 426.5 },
             RED,
             GREEN,
             BLUE
