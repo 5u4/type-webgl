@@ -4,6 +4,14 @@
     <img src="./static/preview.png">
 </p>
 
+<p align="center">
+    <img src="./static/scenemanager.png">
+</p>
+
+<p align="center">
+    <img src="./static/index.png">
+</p>
+
 ## Development + Deployment
 
 ```bash

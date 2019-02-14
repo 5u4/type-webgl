@@ -1,9 +1,19 @@
 html, body {
     min-height: 100%;
-    background-color: rgb(40, 44, 52);
+    background-color: rgb(252, 250, 242);
+}
+
+::-webkit-scrollbar {
+    width: 0px;
 }
 
 canvas {
     display: block;
+    margin: 0 auto;
+}
+
+img {
+    display: block;
+    width: 800px;
     margin: 0 auto;
 }
